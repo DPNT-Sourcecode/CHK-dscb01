@@ -26,12 +26,13 @@ def checkout(skus):
                 total_price += 15
                 d_count += 1
 
-            if a_count >= 3:
-                total_price -= 20
-            if b_count >= 2:
-                total_price -= 15
+        if a_count >= 3:
+            total_price -= 20
+        if b_count >= 2:
+            total_price -= 15
 
-            return total_price
+        return total_price
+
 
 
 
