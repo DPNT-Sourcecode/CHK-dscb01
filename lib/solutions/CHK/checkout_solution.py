@@ -11,7 +11,7 @@ def checkout(skus):
     for shop_item in skus:
         if shop_item not in ["A", "B", "C", "D"] or shop_item == "":
             total_price = -1
-            raise Exception(total_price)
+            break
         else:
             for item in skus:
                 if item == "A":
@@ -33,6 +33,7 @@ def checkout(skus):
                 total_price -= 15
 
     return total_price
+
 
 
 
