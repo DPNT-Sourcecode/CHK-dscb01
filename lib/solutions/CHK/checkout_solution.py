@@ -31,5 +31,6 @@ def checkout(skus):
             if b_count == 2:
                 total_price -= 15
 
-    return total_price
+        return total_price
+
 
