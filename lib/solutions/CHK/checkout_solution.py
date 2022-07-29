@@ -25,11 +25,12 @@ def checkout(skus):
             total_price = sum([a_count * 50, b_count * 30, c_count * 20, d_count * 15])
 
             if a_count > 3:
-                total_price = - 20
+                total_price = total_price - 20
             if b_count > 3:
-                total_price = - 15
+                total_price = total_price = - 15
 
     return total_price
+
 
 
 
