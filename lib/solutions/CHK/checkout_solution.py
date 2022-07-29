@@ -25,4 +25,3 @@ def checkout(skus):
     if b_count > 3:
         total_price = - 15
 
-
