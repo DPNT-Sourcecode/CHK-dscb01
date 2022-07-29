@@ -8,6 +8,8 @@ def checkout(skus):
 
     total_price = 0
 
+    
+
     for item in skus:
         if item == "A":
             a_count += 1
@@ -24,4 +26,5 @@ def checkout(skus):
         total_price = - 20
     if b_count > 3:
         total_price = - 15
+
 
