@@ -1,6 +1,12 @@
 # noinspection PyShadowingBuiltins,PyUnusedLocal
-def compute(num_one, num_two):
-    sum = num_one + num_two
+def compute(int_one, int_two):
+    if int_one not in range(1, 100):
+        int_one = 0
+    if int_two not in range(1, 100):
+        int_two = 0
 
-    raise NotImplementedError()
+    total = sum(int_one, int_two)
+
+    return total
+
 
