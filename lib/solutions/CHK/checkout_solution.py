@@ -5,11 +5,12 @@ def checkout(skus):
     b_count = 0
     c_count = 0
     d_count = 0
+    e_count = 0
 
     total_price = 0
 
     for shop_item in skus:
-        if shop_item not in ["A", "B", "C", "D"] or shop_item == "":
+        if shop_item not in ["A", "B", "C", "D", "E"] or shop_item == "":
             total_price = -1
             return -1
 
@@ -26,10 +27,13 @@ def checkout(skus):
         if item == "D":
             total_price += 15
             d_count += 1
+        if item == "E":
+            total_price += 40
+            e_count += 1
 
-    if a_count >= 3 <= 5:
-        total_price -= 20
-    if a_count >= 6 <= 8:
+    if a_count >= 5 <= 8:
+        total_price -= 50
+    elif a_count >= 3 <= 4:
         total_price -= 20
 
     if b_count >= 2 <= 3:
@@ -37,4 +41,10 @@ def checkout(skus):
     if b_count >= 4 <= 5:
         total_price -= 15
 
+    if e_count >= 2 <= 3:
+        total_price -= 30
+    if e_count >= 4 <= 5:
+        total_price -= 30
+
     return total_price
+
