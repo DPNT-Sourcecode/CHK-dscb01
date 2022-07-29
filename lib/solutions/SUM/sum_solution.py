@@ -8,7 +8,3 @@ def compute(int_one, int_two):
     total = int_one + int_two
 
     return total
-
-
-
-
