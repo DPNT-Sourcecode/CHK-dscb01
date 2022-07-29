@@ -33,11 +33,3 @@ def checkout(skus):
                 total_price -= 15
 
     return total_price
-
-
-
-
-
-
-
-
