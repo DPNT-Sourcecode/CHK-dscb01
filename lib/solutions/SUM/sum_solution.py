@@ -5,9 +5,10 @@ def compute(int_one, int_two):
     # if int_two not in range(1, 100):
     #     int_two = 0
 
-    total = sum(int_one, int_two)
+    total = int_one + int_two
 
     return total
+
 
 
 
