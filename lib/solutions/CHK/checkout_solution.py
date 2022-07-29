@@ -31,7 +31,15 @@ def checkout(skus):
             total_price += 40
             e_count += 1
 
-    if a_count >= 5 <= 8:
+    if a_count == 10:
+        total_price -= 100
+    elif a_count == 9:
+        total_price -= 70
+    elif a_count == 8:
+        total_price -= 70
+    elif a_count == 6:
+        total_price -= 50
+    elif a_count == 5:
         total_price -= 50
     elif a_count >= 3 <= 4:
         total_price -= 20
@@ -47,4 +55,5 @@ def checkout(skus):
         total_price -= 30
 
     return total_price
+
 
